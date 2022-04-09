@@ -27,7 +27,7 @@
     <!--Switch: Input Vaccination Status (boolean)-->
     <Switch
         android:id="@+id/switchh"
-        android:text="Have you vaccinated? "
+        android:text="Are you vaccinated? "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -53,6 +53,6 @@
         android:id="@+id/infoTv"
         android:textSize="20sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
