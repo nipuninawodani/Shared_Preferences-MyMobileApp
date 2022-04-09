@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--EditText: Input Name (String)-->
+    <EditText
+        android:id="@+id/nameEt"
+        android:hint="Enter Name"
+        android:inputType="textCapCharacters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--EditText: Input Age (Int)-->
+    <EditText
+        android:id="@+id/ageEt"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Switch: Input Vaccination Status (boolean)-->
+    <Switch
+        android:id="@+id/switchh"
+        android:text="Have you vaccinated? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!--Button: save data to shared preferences-->
+    <Button
+        android:id="@+id/saveBtn"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Button: Get data from shared preferences-->
+    <Button
+        android:id="@+id/showInfoBtn"
+        android:text="Show Info"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--TextView: Show data from shared preferences-->
+    <TextureView
+        android:id="@+id/infoTv"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+</LinearLayout>
