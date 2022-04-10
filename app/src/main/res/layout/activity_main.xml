@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+    <!--If the application keeps stopping please change above line
+    from android:background="@drawable/bg"
+    to android:background="@drawable/img" & try again.
+    This error may occur when your emulator is slow.-->
+
 
     <!--EditText: Input Name (String)-->
     <EditText
         android:id="@+id/nameEt"
         android:hint="Enter Name"
+        android:textSize="20sp"
         android:inputType="textCapCharacters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <!--EditText: Input Age (Int)-->
-    <EditText
-        android:id="@+id/ageEt"
-        android:hint="Enter Age"
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <!--Switch: Input Vaccination Status (boolean)-->
-    <Switch
-        android:id="@+id/switchh"
-        android:text="Are you vaccinated? "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <!--Button: save data to shared preferences-->
+    <EditText
+        android:id="@+id/ageEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switchh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Are you fully vaccinated?"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
     <Button
         android:id="@+id/saveBtn"
-        android:text="Save"
+        android:text="SAVE"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -49,10 +60,11 @@
         android:layout_height="wrap_content"/>
 
     <!--TextView: Show data from shared preferences-->
-    <TextureView
+    <TextView
         android:id="@+id/infoTv"
-        android:textSize="20sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp" />
 
 </LinearLayout>
