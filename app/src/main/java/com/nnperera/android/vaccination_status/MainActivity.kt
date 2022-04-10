@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity()
             val vaccinated = sharedPreferences.getBoolean("vaccinated",false)
 
             //show data in text view
-            infoTv.text = "NAME: $name \nAGE: $age \n FULLY VACCINATED: $vaccinated"
+            infoTv.text = "Name: $name \nAge: $age \nFully vaccinated: $vaccinated"
         }
 
     }
